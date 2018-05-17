@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Rafael Mora <rafael.mora.guti@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest ./test"
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
@@ -15,6 +18,13 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.3.2",
     "webpack": "^4.8.3"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   }
 }
