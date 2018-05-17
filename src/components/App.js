@@ -4,7 +4,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Welcome to my starter app</h1>
+        <h1>
+          <FormattedMessage id="detail.titulo" />
+        </h1>
       </div>
     );
   }
