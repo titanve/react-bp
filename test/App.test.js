@@ -7,9 +7,15 @@ describe("App", () => {
     const wrapper = shallow(<App />);
 
     // expect(wrapper.find("h1").text()).toBe("Welcome to my starter app");
-    expect(wrapper.find("FormattedMessage").text()).toBe(
-      "Welcome to my starter app"
-    );
+    // const forma = wrapper.find("FormattedMessage");
+    // expect(forma.props().id).toBe("detail.titulo");
     expect(wrapper).toMatchSnapshot;
   });
+});
+
+it("renders expected components", () => {
+  const wrapper = shallow(<App />);
+
+  const forma = wrapper.find("FormattedMessage");
+  expect(forma.props().id).toBe("detail.titulo");
 });
