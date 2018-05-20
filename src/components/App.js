@@ -52,7 +52,7 @@ class App extends Component {
 
   handleCalModelUpdate = calmodel => {
     // console.log(`calmodel VisitasApp: ${JSON.stringify(calmodel)}`);
-    this.setState({ calmodel: calmodel });
+    this.setState({ calmodel });
   };
 
   render() {
