@@ -17,7 +17,7 @@ let locale =
   navigator.language ||
   navigator.userLanguage ||
   "es-ES";
-console.log({ titulo: "locale", valor: locale });
+console.log({ locale: locale });
 
 import "./styles/style.sass";
 
