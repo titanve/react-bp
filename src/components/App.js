@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect, HashRouter } from "react-router-dom";
-import asyncComponent from "asyncComponent/asyncComponent";
+import asyncComponent from "../common/asyncComponent/asyncComponent";
 
 const List = asyncComponent(
   () => import("./src/components/List").then(module => module.default),
@@ -26,7 +26,7 @@ class App extends Component {
             path="/add/:id"
             render={({ match }) => <Form id={match.params.id} />}
           />
-          <Route path="/add" render={() => <VisitasForm />} />
+          <Route path="/add" render={() => <Form />} />
           <Redirect path="*" to="/" />
         </Switch>
       </HashRouter>
