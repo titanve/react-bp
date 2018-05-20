@@ -4,11 +4,28 @@ React boilerplate for ReactJs apps
 
 ## Instructions
 
-`npm install`
-`npm start`
+```shell
+npm install
+```
+
+```shell
+npm start
+```
 
 or, if you use `yarn`:
-`yarn run start`
+
+```shell
+yarn run start
+```
 
 and for production mode:
-`npm build` or `yarn run build`
+
+```shell
+npm build
+```
+
+or
+
+```shell
+yarn run build
+```
